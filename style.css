@@ -63,6 +63,7 @@ body {
   grid-template: 1.5fr 2fr / 3fr 2fr;
   justify-items: stretch;
   align-items: center;
+  padding: 0px 60px 0px 40px;
   background-color: #fff;
 }
 
@@ -71,7 +72,7 @@ body {
   grid-template-columns: auto 1fr;  
   align-items: center;
   gap: 15px;
-  padding: 0px max(20px, 5%);
+  padding-right: max(20px, 5%);
 }
 
 .search input {
@@ -93,6 +94,25 @@ body {
 
 .search input::-webkit-search-cancel-button {
   -webkit-appearance: none;
+}
+
+.account {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 25px;
+  justify-content: end;
+  align-items: center;
+}
+
+.account img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.account span {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .profile {
