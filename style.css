@@ -48,10 +48,10 @@ body {
   font-size: 18px;
 }
 
-.sidebar-group ul li,
+.sidebar-group ul a,
 .title h1 {
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 43px 1fr;
   align-items: center;
 }
 
@@ -99,7 +99,8 @@ body {
 .account {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 25px;
+  gap: 30px;
+  padding-right: 20px;
   justify-content: end;
   align-items: center;
 }
