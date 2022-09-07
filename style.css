@@ -117,7 +117,27 @@ body {
 }
 
 .profile {
-  justify-self: start;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  gap: 20px;
+  align-items: center;
+  /* justify-self: start; */
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.profile div {
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profile-handle {
+  font-size: 22px;
 }
 
 .buttons {
