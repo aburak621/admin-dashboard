@@ -26,7 +26,7 @@ body {
 }
 
 .page-container {
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template: 1.5fr 10fr / 2fr 10fr;
 }
@@ -123,7 +123,6 @@ body {
   grid-template-columns: 75px 1fr;
   gap: 20px;
   align-items: center;
-  /* justify-self: start; */
 }
 
 .profile img {
@@ -174,10 +173,10 @@ body {
 }
 
 .project-cards {
+  height: calc(100% - 15px - 24px);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
-  margin-top: 15px;
 }
 
 .project-card {
@@ -225,7 +224,6 @@ body {
   align-items: center;
   min-height: 150px;
   padding: 20px 30px;
-  margin-top: 15px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -243,7 +241,6 @@ body {
   color: var(--text-gray);
 }
 
-
 .announcement-card>.line {
   height: 2px;
   background-color: var(--gray);
@@ -251,17 +248,48 @@ body {
 
 .trending {}
 
-.trending-element {
-  background-color: #fff;
+.trending-card {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  height: calc(100% - 15px - 24px);
   border-radius: 10px;
   min-height: 150px;
   padding: 25px;
-  margin-top: 15px;
+  background-color: #fff;
 }
 
-.projects>span,
-.announcements>span,
-.trending>span {
+.trending-item {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.trending-item img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.trending-item-info {
+  display: grid;
+}
+
+.trending-user-name {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+.trending-project-name {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.projects>.section-title,
+.announcements>.section-title,
+.trending>.section-title {
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
 }
