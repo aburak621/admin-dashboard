@@ -236,3 +236,10 @@ body {
   padding: 25px;
   margin-top: 15px;
 }
+
+.projects>span,
+.announcements>span,
+.trending>span {
+  font-size: 20px;
+  font-weight: bold;
+}
