@@ -8,6 +8,7 @@
 :root {
   --blue: #1992D4;
   --gray: #E2E8F0;
+  --text-gray: #7B7B7B;
 }
 
 ul {
@@ -200,7 +201,7 @@ body {
 
 .project-description {
   font-size: 15px;
-  color: #7B7B7B;
+  color: var(--text-gray);
 }
 
 .project-title {
@@ -217,14 +218,35 @@ body {
   align-self: end;
 }
 
-.announcements {}
-
 .announcement-card {
-  background-color: #fff;
+  display: grid;
+  grid-auto-rows: 1fr 2px;
   border-radius: 10px;
+  align-items: center;
   min-height: 150px;
-  padding: 25px;
+  padding: 20px 30px;
   margin-top: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.announcement-title {
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.announcement-item {
+  padding: 15px 0px;
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+
+.announcement-card>.line {
+  height: 2px;
+  background-color: var(--gray);
 }
 
 .trending {}
